@@ -1,0 +1,208 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans" sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.navigation-link  {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+
+.button {
+  color:#FFFFFF;
+  background-color: #756257;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px ;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+ }
+
+ .button-blue{
+  background: #83B3D3;
+ }
+
+.intro {
+ background-image: url(../images/backgrounds/index-background.jpg);
+ background-size: 100% auto;
+ background-repeat: no-repeat;
+}
+
+.advantages-header {
+  text-align: center;
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.advantages-description {
+  font-size: 22px;
+  line-height: 36px;
+}
+
+.advantages-item  {
+  text-align: center;
+}
+.advantages-item-blue {
+  background: #83B3D3;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.item-blue-title {
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+text-transform: uppercase;
+}
+
+.advantages-item {
+  text-align: center;
+}
+
+.advantages-item h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.advantages-item:nth-child(odd){
+background-color: #83B3D31F;
+}
+
+.item-background {
+  background-color: #83B3D333;
+}
+
+.booking {
+  text-align: center;
+}
+
+.booking-title {
+font-weight: bold;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+color: #000000;
+}
+
+.news-letter-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.news-letter {
+  background-image: url(../images/backgrounds/footer-background.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color:#FFFFFF;
+  text-align: center;
+  }
+
+.news-letter-title {
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+}
+
+.news-letter-description {
+font-size: 22px;
+line-height: 26px;
+}
+
+.footer-phone {
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+}
+
+.inner-header {
+  background-image: url(../images/backgrounds/catalog-background.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+}
+
+.inner-header-title{
+font-weight: bold;
+font-size: 60px;
+line-height: 78px;
+}
+
+.breadcrumbs-item {
+font-size: 16px;
+}
+
+.breadcrumbs-item {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.catalog-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.sorting-type {
+font-size: 18px;
+line-height: 23px;
+}
+
+.product-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+}
+
+.product-card-link {
+  text-decoration: none;
+}
+
+.product-card-building {
+font-size: 18px;
+line-height: 23px;
+}
+
+.product-card-price {
+  font-size: 18px;
+  line-height: 23px;
+}

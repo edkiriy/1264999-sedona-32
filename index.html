@@ -5,35 +5,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
   <!-- Header -->
   <header class="page-header">
     <nav class="navigation">
       <ul class="menu">
-        <li class="menu-item"><a
-           class="menu-link menu-link-active" href="#">Главная</a></li>
-        <li class="menu-item"><a class="menu-link" href="#">О Седоне</a></li>
-        <li class="menu-item"><a class="menu-link" href="catalog.html">Гостиницы</a></li>
+        <li class="menu-item"><a class="navigation-link navigation-link-active" href="#">Главная</a></li>
+        <li class="menu-item"><a class="navigation-link" href="#">О Седоне</a></li>
+        <li class="menu-item"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
       </ul>
 
-    <a class="logo" title="Седона" aria-label="Седона">
-      <img class="logo-image" src="#" alt="Седона">
+    <a class="logo" title="Седона" aria-label="Седона" href="#">
+      <img class="logo-image" src="favicon.svg" alt="Седона">
     </a>
 
     <ul class="navigation-user">
       <li class="navigation-user-item">
-        <a href="#" class="navigation-user-link navigation-user-search">
+        <a href="#" class="navigation-link navigation-user-search">
           <span class="visually-hidden">Поиск</span>
         </a>
       </li>
       <li class="navigation-user-item">
-        <a href="#" class="navigation-user-link navigation-user-favorites">
+        <a href="#" class="navigation-link navigation-user-favorites">
           <span class="visually-hidden">Избранное</span>
         </a>
       </li>
       <li class="navigation-user-item">
-        <a href="#" class="navigation-user-link button">
+        <a href="#" class="navigation-link button">
           <span class="visually-hidden">ХОЧУ СЮДА!</span>
         </a>
       </li>
@@ -46,8 +46,8 @@
 <main class="index">
 <!-- Banner & Intro -->
 <section class="intro">
-  <h2 class="visually-hidden"></h2>
-  <img class="intro-slogan" src="#" alt="Слоган" >
+  <h2 class="visually-hidden">Добро пожаловать в великолепную Седону</h2>
+  <img class="intro-slogan" src="images/logo/full-logo.svg" alt="слоган" width="458" height="352">
 </section>
 <!-- /Banner & Intro -->
 
@@ -61,37 +61,41 @@
   <div class="advantages-grid">
     <!-- 1 row -->
     <div class="advantages-row">
-      <div class="advantages-item">
-        <h3>Настоящий городок</h3>
+      <div class="advantages-item-blue">
+        <h3 class="item-blue-title">Настоящий городок</h3>
         <p>— №1 —</p>
         <p>Седона — не аттракцион для туристов, там течёт
           своя жизнь</p>
       </div>
-      <img src="#" alt="Мотель" class="advantages-image">
+      <img src="images/motel.jpg" alt="Мотель" class="advantages-image" width="800" height="384">
     </div>
     <!-- 2 row -->
     <ul class="advantages-row">
       <li class="advantages-item">
-        <img src="#" alt="">
-        <h3></h3>
-        <p></p>
+        <img src="images/icons/house.svg" alt="Мотель">
+        <h3>Жильё</h3>
+        <p>Рекомендуем пожить
+          в настоящем мотеле,
+          всё как в кино!</p>
       </li>
       <li class="advantages-item">
-        <img src="#" alt="">
-        <h3></h3>
-        <p></p>
+        <img src="images/icons/foods.svg" alt="Еда">
+        <h3>Еда</h3>
+        <p>Всегда заказывайте
+          топовый фирменный бургер, вы не разочаруетесь!</p>
       </li>
       <li class="advantages-item">
-        <img src="#" alt="">
-        <h3></h3>
-        <p></p>
+        <img src="images/icons/souvenirs.svg" alt="Сувениры">
+        <h3>Сувениры</h3>
+        <p>Не только китайского,
+          но и настоящего местного производства!</p>
       </li>
     </ul>
     <!-- 3 row -->
     <div class="advantages-row">
-      <img src="#" alt="Мост дьявола" class="advantages-image">
-      <div class="advantages-item">
-        <h3>Там есть
+      <img src="images/bridge.jpg" alt="Мост" class="advantages-image" width="800" height="384">
+      <div class="advantages-item-blue">
+        <h3 class="item-blue-title">Там есть
           мост дьявола</h3>
         <p>— №2 —</p>
         <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -105,7 +109,7 @@
         <p>Все достопримечательности
           находятся очень близко</p>
       </li>
-      <li class="advantages-item">
+      <li class="advantages-item item-background">
         <h3>Красивая
           дорога</h3>
         <p>— №4 —</p>
@@ -162,7 +166,7 @@
 </ul>
 <a href="tel:78128121212" class="footer-phone">+7 (812) 812-12-12</a>
 <a href="#" class="footer-partner">
-  <img src="#" alt="html academy" class="footer-partner">
+  <img src="images/logo/logo_htmlacademy.svg" alt="html academy" class="footer-partner" width="115" height="34">
 </a>
 </section>
 <!-- /Footer-contacts -->

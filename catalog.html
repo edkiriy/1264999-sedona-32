@@ -5,34 +5,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
   <!-- Header -->
   <header class="page-header">
     <nav class="navigation">
       <ul class="menu">
-        <li class="menu-item"><a class="menu-link" href="#">Главная</a></li>
-        <li class="menu-item"><a class="menu-link" href="#">О Седоне</a></li>
-        <li class="menu-item"><a class="menu-link  menu-link-active" href="catalog.html">Гостиницы</a></li>
+        <li class="menu-item"><a class="navigation-link navigation-link-active" href="#">Главная</a></li>
+        <li class="menu-item"><a class="navigation-link" href="#">О Седоне</a></li>
+        <li class="menu-item"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
       </ul>
 
-    <a class="logo" title="Седона" aria-label="Седона">
-      <img class="logo-image" src="#" alt="Седона">
-    </a>
+      <a class="logo" title="Седона" aria-label="Седона" href="index.html">
+        <img class="logo-image" src="favicon.svg" alt="Седона">
+      </a>
 
     <ul class="navigation-user">
       <li class="navigation-user-item">
-        <a href="#" class="navigation-user-link navigation-user-search">
+        <a href="#" class="navigation-link navigation-user-search">
           <span class="visually-hidden">Поиск</span>
         </a>
       </li>
       <li class="navigation-user-item">
-        <a href="#" class="navigation-user-link navigation-user-favorites">
+        <a href="#" class="navigation-link navigation-user-favorites">
           <span class="visually-hidden">Избранное</span>
         </a>
       </li>
       <li class="navigation-user-item">
-        <a href="#" class="navigation-user-link button">
+        <a href="#" class="navigation-link button">
           <span class="visually-hidden">ХОЧУ СЮДА!</span>
         </a>
       </li>
@@ -130,7 +131,7 @@
         <ul class="product-card-left">
           <li class="product-card-item">
           <a href="#" class="product-card-link">
-            <img src="#" alt="Гостиница" class="product-card-image">
+            <img src="images/catalog/hotel-1.jpg" alt="Гостиница" class="product-card-image" width="180" height="120">
             <h3 class="product-card-title">Amara Resort & Spa</h3>
             <span class="product-card-building">Гостиница</span>
           </a>
@@ -140,7 +141,7 @@
           </li>
           <li class="product-card-item">
             <a href="#" class="product-card-link">
-              <img src="#" alt="Мотель" class="product-card-image">
+              <img src="images/catalog/hotel-2.jpg" alt="Мотель" class="product-card-image" width="180" height="120">
               <h3 class="product-card-title">Desert Quail Inn</h3>
               <span class="product-card-building">Мотель</span>
             </a>
@@ -150,7 +151,7 @@
             </li>
             <li class="product-card-item">
               <a href="#" class="product-card-link">
-                <img src="#" alt="Апартаменты" class="product-card-image">
+                <img src="images/catalog/hotel-3.jpg" alt="Апартаменты" class="product-card-image" width="180" height="120">
                 <h3 class="product-card-title">Villas at Poco Diablo</h3>
                 <span class="product-card-building">Апартаменты</span>
               </a>
@@ -160,7 +161,7 @@
               </li>
               <li class="product-card-item">
                 <a href="#" class="product-card-link">
-                  <img src="#" alt="Гостиница" class="product-card-image">
+                  <img src="images/catalog/hotel-4.jpg" alt="Гостиница" class="product-card-image" width="180" height="120">
                   <h3 class="product-card-title">GreenTree Inn</h3>
                   <span class="product-card-building">Гостиница</span>
                 </a>
@@ -195,7 +196,7 @@
             <span class="product-card-rating">Рейтинг: 9,2</span>
           </li>
         </ul>
-        <button class="button blue-button product-card-button" type="button">Загрузить еще</button>
+        <button class="button button-blue product-card-button" type="button">Загрузить еще</button>
       <!-- /List-card -->
 
       <!-- Pagination -->
@@ -224,8 +225,8 @@
   <!-- Footer -->
 <footer class="inner-footer">
 
-  <!--News-letter-->
-  <section class="news-letter">
+  <!--News-letter-inner-->
+  <section class="news-letter-inner">
     <h2 class="news-letter-title">Подпишитесь на рассылку</h2>
     <p class="news-letter-description">Только полезная информация и никакого спама,
       честное бойскаутское!</p>
