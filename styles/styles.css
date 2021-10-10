@@ -1,8 +1,9 @@
+/* FONTS */
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("ptsans-400.woff2") format("woff2");
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
   font-display: swap;
 }
 
@@ -10,27 +11,57 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("ptsans-700.woff2") format("woff2");
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
   font-display: swap;
 }
+/* FONTS END */
 
+/* GLOBAL STYLES */
 body {
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background-color: #ffffff;
+  background-color:#F2F2F2;
   color: #333333;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+/* GLOBAL STYLES END */
+
+/* UTILITY*/
+.page-wrapper {
+max-width: 1200px;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+background-color: #FFFFFF;
 }
 
-.navigation-link  {
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: 700;
-  text-align: center;
-  color: #000000;
-  text-decoration: none;
+.rs-ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
+.rs-text {
+  padding: 0;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip:rect(0 0 0 0);
+  overflow: hidden;
+}
+/* UTILITY END */
+
+/* BUTTONS */
 .button {
   color:#FFFFFF;
   background-color: #756257;
@@ -44,165 +75,191 @@ body {
  }
 
  .button-blue{
-  background: #83B3D3;
+  background-color: #83B3D3;
  }
 
-.intro {
- background-image: url(../images/backgrounds/index-background.jpg);
- background-size: 100% auto;
- background-repeat: no-repeat;
-}
+ .button-green {
+   background-color:#7DB54F;
+ }
+ .button-1 {
+  font-size: 20px;
+  line-height: 26px;
 
-.advantages-header {
-  text-align: center;
-}
+ }
+/* BUTTONS END */
 
-.advantages-title {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-  color: #000000;
-}
-
-.advantages-description {
-  font-size: 22px;
-  line-height: 36px;
-}
-
-.advantages-item  {
-  text-align: center;
-}
-.advantages-item-blue {
-  background: #83B3D3;
-  color: #FFFFFF;
-  text-align: center;
-}
-
-.item-blue-title {
+/* TYPOGRATHY */
+.title-1{
 font-weight: 700;
-font-size: 24px;
-line-height: 28px;
-text-transform: uppercase;
-}
-
-.advantages-item {
-  text-align: center;
-}
-
-.advantages-item h3 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  color: #000000;
-}
-
-.advantages-item:nth-child(odd){
-background-color: #83B3D31F;
-}
-
-.item-background {
-  background-color: #83B3D333;
-}
-
-.booking {
-  text-align: center;
-}
-
-.booking-title {
-font-weight: bold;
 font-size: 30px;
 line-height: 36px;
 text-transform: uppercase;
+text-align: center;
 color: #000000;
 }
 
-.news-letter-description {
-  font-size: 22px;
-  line-height: 26px;
-}
-
-.news-letter {
-  background-image: url(../images/backgrounds/footer-background.jpg);
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  color:#FFFFFF;
-  text-align: center;
-  }
-
-.news-letter-title {
+.title-2 {
 font-weight: 700;
-font-size: 30px;
-line-height: 36px;
-text-transform: uppercase;
-}
-
-.news-letter-description {
-font-size: 22px;
-line-height: 26px;
-}
-
-.footer-phone {
-font-size: 40px;
-line-height: 40px;
+font-size: 24px;
+line-height: 28px;
 text-align: center;
 text-transform: uppercase;
 color: #000000;
 }
 
-.inner-header {
-  background-image: url(../images/backgrounds/catalog-background.jpg);
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  color: #FFFFFF;
+.paragraph{
+font-size: 22px;
+line-height: 36px;
+text-align: center;
 }
+/* TYPOGRATHY END */
 
-.inner-header-title{
-font-weight: bold;
-font-size: 60px;
-line-height: 78px;
-}
-
-.breadcrumbs-item {
-font-size: 16px;
-}
-
-.breadcrumbs-item {
+ /* SECTION HEADER */
+ .navigation-link  {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
-}
-
-.catalog-title {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 39px;
-  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
   color: #000000;
 }
+ /* SECTION HEADER END */
 
-.sorting-type {
-font-size: 18px;
-line-height: 23px;
+ /* SECTION INTRO */
+ .intro {
+   background: #ddebf4 url("../img/index/intro/index-background.jpg") no-repeat center top/cover;
+   text-align: center;
+   padding: 45px;
+   padding-bottom: 85px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+
+ }
+ .intro::after {
+   position: absolute;
+   content:"";
+   width: 100%;
+   height: 57px;
+   background: url("../img/index/intro/divider.svg") no-repeat bottom;
+   bottom: 0;
+   left: 0;
+   right: 0;
+ }
+  /* SECTION INTRO END */
+
+/* SECTION ADVANTAGES */
+.advantages-title {
+  color: #FFFFFF;
 }
 
-.product-card-title {
+.advantages-item {
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-blue {
+  background: #83B3D3;
+  color: #FFFFFF;
+}
+
+.advantages-item-white {
+  background-color:#FFFFFF;
+}
+
+.advantages-item-shade{
+  background: rgba(131, 179, 211, 0.2);
+}
+/* SECTION ADVANTAGES END */
+
+/* SECTION BOOKING */
+.booking {
+text-align: center;
+}
+.booking-button {
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+}
+/* SECTION BOOKING END */
+
+/* SECTION NEWSLETTER */
+.newsletter{
+background: url("../img/index/newsletter/background.jpg")no-repeat;
+text-align: center;
+}
+.newsletter-catalog {
+  background-color: #FFFFFF;
+}
+/* SECTION NEWSLETTER END */
+
+/* SECTION FOOTER-CONTACTS */
+.footer-phone {
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+text-transform: uppercase;
+text-decoration: none;
+color: #000000;
+}
+/* SECTION FOOTER-CONTACTS END */
+
+/* INNER HEADER */
+.inner-header{
+  background: #7ea5c6 url("../img/catalog/inner-header-background.jpg") no-repeat;
+  color: #FFFFFF;
+}
+.inner-header-title {
+font-weight: 700;
+font-size: 60px;
+line-height: 78px;
+}
+/* INNER HEADER END */
+
+/* SECTION CATALOG */
+
+/* SORT */
+.catalog-sort-title {
+font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+text-transform: uppercase;
+color: #000000;
+}
+
+.cheap{
+  line-height: 23px;
+}
+/* RESULT */
+.card-title{
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
+}
+
+.card-title-link {
+  text-decoration: none;
   color: #000000;
 }
 
-.product-card-link {
-  text-decoration: none;
-}
-
-.product-card-building {
-font-size: 18px;
-line-height: 23px;
-}
-
-.product-card-price {
+.card-category{
   font-size: 18px;
   line-height: 23px;
+
+.raiting-value {
+font-size: 16px;
+line-height: 21px;
+text-align: center;
+text-transform: uppercase;
 }
+
+/* PAGINATION */
+.amount-elements {
+  line-height: 24px;
+}
+
+/* SECTION CATALOG END */
+
